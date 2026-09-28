@@ -1,0 +1,13 @@
+Metric,Value
+Accuracy,0.9012
+Precision_Spam,0.9072
+Recall_Spam,0.8347
+F1_Spam,0.8694
+Macro_F1,0.8950
+True_Negatives,527
+False_Positives,31
+False_Negatives,60
+True_Positives,303
+Max_Depth_Param,8
+Actual_Depth,8
+Num_Leaves,61

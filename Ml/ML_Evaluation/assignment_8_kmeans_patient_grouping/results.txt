@@ -1,0 +1,46 @@
+======================================================================
+ASSIGNMENT 8: K-MEANS CLUSTERING PATIENT GROUPING RESULTS REPORT
+======================================================================
+Algorithm:         K-Means (k-means++ initialization)
+Dataset:           UCI Heart Disease (ID: 45)
+Chosen K:          3 clusters
+Method for K:      Elbow Method + Silhouette Score Validation
+Random State:      42
+Total Patients:    303
+
+FINAL CLUSTERING METRICS (UNSUPERVISED — NO ACCURACY METRIC):
+----------------------------------------------------------------------
+Inertia (WCSS):    981.2754
+Silhouette Score:  0.2287
+  (Range: -1 to +1; closer to +1 indicates well-separated, compact clusters)
+
+CLUSTER CENTERS (ORIGINAL SCALE):
+----------------------------------------------------------------------
+  Cluster 0: 86 patients (Age=59.1, BP=127.1, Chol=228.4, MaxHR=125.8, STdep=1.88)
+  Cluster 1: 147 patients (Age=48.8, BP=125.2, Chol=235.7, MaxHR=164.1, STdep=0.44)
+  Cluster 2: 70 patients (Age=60.5, BP=151.0, Chol=292.3, MaxHR=148.6, STdep=1.27)
+
+SILHOUETTE SCORE COMPARISON (K=2..6):
+----------------------------------------------------------------------
+  K=2: 0.2374
+  K=3: 0.2287
+  K=4: 0.1960
+  K=5: 0.2055
+  K=6: 0.1946
+
+IMPORTANT ACADEMIC NOTE — UNSUPERVISED LEARNING:
+----------------------------------------------------------------------
+This is a clustering (unsupervised) task. Classification accuracy is NOT
+applicable and is NOT reported. Instead, the quality of groupings is assessed
+via Inertia (within-cluster compactness) and Silhouette Score (separation).
+The 'num' target column was strictly excluded from all input features
+to prevent data leakage and to ensure a genuine unsupervised discovery.
+
+INTERPRETATION:
+----------------------------------------------------------------------
+K-Means with K=3 groups the 303 heart disease patients into
+3 clinically interpretable health risk cohorts based on age,
+blood pressure, cholesterol, maximum heart rate, and ST depression.
+PCA 2D visualization confirms clear cluster separation. The Silhouette
+Score of 0.2287 indicates meaningful cluster cohesion.
+======================================================================

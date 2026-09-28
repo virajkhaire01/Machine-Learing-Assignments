@@ -1,0 +1,28 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 4 - Decision Tree for Spam Classification
+Dataset Name:      Spambase
+UCI Dataset ID:    94
+UCI URL:           https://archive.ics.uci.edu/dataset/94/spambase
+Total Instances:   4601 emails
+Input Features:    57 continuous word/char/capital-run-length attributes
+Target Class:      Class (1 = Spam, 0 = Ham)
+
+MODEL PARAMETERS:
+----------------------------------------------------------------------
+Algorithm:         DecisionTreeClassifier (scikit-learn)
+Criterion:         Gini Impurity
+max_depth:         8  (to keep visualization readable)
+min_samples_split: 5
+min_samples_leaf:  2
+Random State:      42
+Actual Depth:      8
+Number of Leaves:  61
+
+PREPROCESSING:
+----------------------------------------------------------------------
+- Missing values: 0 found; no imputation required.
+- Stratified 80/20 train/test split.
+- No feature scaling applied (Decision Trees are scale-invariant).
+======================================================================

@@ -1,0 +1,33 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 8 - K-Means Clustering for Patient Grouping
+Dataset Name:      Heart Disease
+UCI Dataset ID:    45
+UCI URL:           https://archive.ics.uci.edu/dataset/45/heart+disease
+Originator:        Andras Janosi, William Steinbrunn, Matthias Pfisterer, Robert Detrano, 1988
+Total Instances:   303 patient records
+Total Features:    13 attributes (13 inputs + 1 diagnosis target)
+Target (Excluded): num (0 = no disease, 1-4 = disease severity) — NOT used as clustering input
+
+SELECTED NUMERIC FEATURES FOR CLUSTERING:
+----------------------------------------------------------------------
+1. age        - Patient age in years
+2. trestbps   - Resting blood pressure (mm Hg) on admission
+3. chol       - Serum cholesterol (mg/dl)
+4. thalach    - Maximum heart rate achieved (beats/min)
+5. oldpeak    - ST depression induced by exercise relative to rest
+
+PREPROCESSING:
+----------------------------------------------------------------------
+- Missing values: 0 total across selected features.
+- Imputation: Median fill for missing entries.
+- Feature Scaling: StandardScaler (zero-mean, unit-variance) — essential for Euclidean KMeans.
+- K Selection: Elbow Method over K=2..10; confirmed with Silhouette Scores.
+- Chosen K: 3
+- Algorithm: KMeans (k-means++ initialization, n_init=10)
+
+NOTE: This is UNSUPERVISED learning. No accuracy metric is reported.
+Silhouette Score (0.2287) and Inertia (981.28) are appropriate
+evaluation metrics for clustering quality.
+======================================================================

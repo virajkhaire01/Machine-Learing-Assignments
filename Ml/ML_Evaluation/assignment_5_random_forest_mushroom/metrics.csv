@@ -1,0 +1,12 @@
+Metric,Value
+Accuracy,1.0000
+Precision_Poisonous,1.0000
+Recall_Poisonous,1.0000
+F1_Poisonous,1.0000
+Macro_F1,1.0000
+True_Negatives,842
+False_Positives,0
+False_Negatives,0
+True_Positives,783
+N_Estimators,100
+Top_Feature,odor

@@ -1,0 +1,9 @@
+Model,Metric,Value
+AdaBoost,Accuracy,1.0000
+AdaBoost,Precision,1.0000
+AdaBoost,Recall,1.0000
+AdaBoost,F1,1.0000
+Bagging,Accuracy,1.0000
+Bagging,Precision,1.0000
+Bagging,Recall,1.0000
+Bagging,F1,1.0000

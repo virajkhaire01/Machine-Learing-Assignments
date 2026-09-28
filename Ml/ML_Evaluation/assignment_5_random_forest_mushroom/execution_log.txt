@@ -1,0 +1,75 @@
+===========================================================================
+ASSIGNMENT 5: RANDOM FOREST FOR MUSHROOM CLASSIFICATION
+Dataset: UCI Mushroom (ID: 73)
+Target: Edible (e) vs Poisonous (p)
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_5\mushroom.csv
+
+[1] Dataset Shape: 8124 rows, 23 columns
+    Target column: 'poisonous'
+    Feature count: 22
+
+Class Distribution:
+poisonous
+e    4208
+p    3916
+
+[2] Handling Missing Values...
+    Columns with missing values:
+      'stalk-root': 2480 missing (30.5%)
+    Strategy: Filled with column mode (most frequent category).
+
+[3] Encoding Categorical Features using LabelEncoder...
+    Target classes encoded: {0: 'e', 1: 'p'}
+    All 22 feature columns label-encoded.
+
+[4] Train/Test Split: 6499 train | 1625 test
+
+[5] Training RandomForestClassifier (100 trees)...
+    Model trained with 100 decision trees.
+
+[6] Evaluation Metrics:
+    Accuracy:              100.00% (1.0000)
+    Precision (Poisonous): 100.00% (1.0000)
+    Recall (Poisonous):    100.00% (1.0000)
+    F1 Score (Poisonous):  100.00% (1.0000)
+    Macro F1:              1.0000
+
+    Confusion Matrix (rows=Actual, cols=Predicted):
+     e    p
+e  842    0
+p    0  783
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           e     1.0000    1.0000    1.0000       842
+           p     1.0000    1.0000    1.0000       783
+
+    accuracy                         1.0000      1625
+   macro avg     1.0000    1.0000    1.0000      1625
+weighted avg     1.0000    1.0000    1.0000      1625
+
+[7] Saved classification report: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_5_random_forest_mushroom\classification_report.txt
+[8] Saved confusion matrix: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_5_random_forest_mushroom\confusion_matrix.png
+
+Top 10 Most Important Features:
+                 Feature  Importance
+                    odor    0.179867
+              gill-color    0.122870
+               gill-size    0.113607
+       spore-print-color    0.102116
+               ring-type    0.065316
+              population    0.061165
+              stalk-root    0.054003
+stalk-surface-above-ring    0.050782
+                 bruises    0.044802
+                 habitat    0.033251
+[9] Saved feature importance chart: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_5_random_forest_mushroom\feature_importance.png
+
+[10] Saved metrics CSV: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_5_random_forest_mushroom\metrics.csv
+[11] Saved dataset_info.txt and results.txt
+
+===========================================================================
+ASSIGNMENT 5 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

@@ -1,0 +1,31 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 3 - SVM for Email Classification
+Dataset Name:      Spambase
+UCI Dataset ID:    94
+UCI URL:           https://archive.ics.uci.edu/dataset/94/spambase
+Donor:             Mark Hopkins, Erik Reeber, George Forman, Jaap Suermondt (HP Labs)
+Total Instances:   4601 emails
+Input Features:    57 continuous attributes
+Target Class:      Class (1 = Spam, 0 = Not Spam / Ham)
+
+FEATURE BREAKDOWN:
+----------------------------------------------------------------------
+- 48 continuous features: Percentage of words in the email that match a specific word
+  (e.g., word_freq_make, word_freq_address, word_freq_free, word_freq_money, word_freq_credit).
+- 6 continuous features: Percentage of characters in the email that match specific characters
+  (e.g., char_freq_semicolon, char_freq_dollar, char_freq_bang).
+- 3 continuous features: Capital run-length metrics
+  - capital_run_length_average: Average length of uninterrupted sequences of capital letters.
+  - capital_run_length_longest: Maximum length of uninterrupted sequences of capital letters.
+  - capital_run_length_total: Total number of capital letters in the email.
+
+PREPROCESSING APPLIED:
+----------------------------------------------------------------------
+- Missing values: Checked all 58 columns; 0 missing values detected.
+- Stratified Split: 80% train (3680 samples), 20% test (921 samples), preserving spam ratio.
+- Feature Scaling: Standardized using StandardScaler (zero mean, unit variance) to prevent high-range
+  capital run-length features from overpowering percentage-frequency features.
+- Random Seed: Fixed at 42 for total reproducibility.
+======================================================================

@@ -1,0 +1,44 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET AUDIT & SPECIFICATION
+======================================================================
+Assignment:        Assignment 1 - Simple Linear Regression
+Dataset Name:      Auto MPG
+UCI Dataset ID:    9
+UCI URL:           https://archive.ics.uci.edu/dataset/9/auto+mpg
+Source:            Original dataset provided by Carnegie Mellon University / StatLib
+Target Variable:   mpg (Miles Per Gallon, Continuous)
+Selected Feature:  displacement (Engine displacement in cubic inches, Continuous)
+Total Instances:   398 rows
+Evaluated Rows:    398 rows (after verifying missing values)
+Input Feature Dim: 1 independent variable (displacement)
+
+CRITICAL ACADEMIC INVESTIGATION REGARDING SALARY PREDICTION:
+----------------------------------------------------------------------
+1. Repository Investigation:
+   A comprehensive programmatic query of the UCI Machine Learning Repository
+   API via `ucimlrepo.list_available_datasets` for queries ('salary', 'wage',
+   'income', 'compensation', 'earnings') revealed zero genuine continuous salary
+   regression datasets in the repository.
+   
+2. Scrutiny of Common Datasets:
+   - "Census Income (Adult)" (UCI ID 20): Strictly a binary classification
+     dataset with categorical target '>50K' vs '<=50K'. It does not contain
+     continuous salary values and treating it as regression is academically invalid.
+   - "Salary_Data.csv" (YearsExperience vs. Salary): A popular 30-row file
+     found in introductory online blogs and Kaggle, but it has no origin or entry
+     in the peer-reviewed UCI Machine Learning Repository.
+
+3. Academically Defensible Selection:
+   In strict accordance with the assignment guidelines, UCI Auto MPG (Dataset ID 9)
+   is employed as the canonical, academically rigorous benchmark for single-variable
+   linear regression. The negative relationship between engine displacement and fuel
+   efficiency (mpg) cleanly demonstrates the mathematical mechanics of Ordinary
+   Least Squares (OLS) regression without fabricating data.
+
+PREPROCESSING APPLIED:
+----------------------------------------------------------------------
+- Feature isolation: Extracted 'displacement' as independent variable X and 'mpg' as target y.
+- Missing values: Checked for null entries; none present in selected columns.
+- Data Types: Verified as float64 continuous measurements.
+- Train/Test Split: 80% training (N=318), 20% testing (N=80), random_state=42.
+======================================================================

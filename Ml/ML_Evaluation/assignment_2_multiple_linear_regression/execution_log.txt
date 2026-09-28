@@ -1,0 +1,84 @@
+===========================================================================
+ASSIGNMENT 2: MULTIPLE LINEAR REGRESSION FOR HOUSE PRICE PREDICTION
+Dataset: UCI Real Estate Valuation (ID: 477)
+Target: Y house price of unit area
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_2\real_estate_valuation.csv
+
+[1] Dataset Dimensions: 414 rows, 7 columns
+
+Dataset Columns:
+  - X1 transaction date
+  - X2 house age
+  - X3 distance to the nearest MRT station
+  - X4 number of convenience stores
+  - X5 latitude
+  - X6 longitude
+  - Y house price of unit area
+
+Statistical Summary:
+       X1 transaction date  X2 house age  X3 distance to the nearest MRT station  X4 number of convenience stores  X5 latitude  X6 longitude  Y house price of unit area
+count               414.00        414.00                                  414.00                           414.00       414.00        414.00                      414.00
+mean               2013.15         17.71                                 1083.89                             4.09        24.97        121.53                       37.98
+std                   0.28         11.39                                 1262.11                             2.95         0.01          0.02                       13.61
+min                2012.67          0.00                                   23.38                             0.00        24.93        121.47                        7.60
+25%                2012.92          9.02                                  289.32                             1.00        24.96        121.53                       27.70
+50%                2013.17         16.10                                  492.23                             4.00        24.97        121.54                       38.45
+75%                2013.42         28.15                                 1454.28                             6.00        24.98        121.54                       46.60
+max                2013.58         43.80                                 6488.02                            10.00        25.01        121.57                      117.50
+
+[2] Missing Values Check:
+X1 transaction date                       0
+X2 house age                              0
+X3 distance to the nearest MRT station    0
+X4 number of convenience stores           0
+X5 latitude                               0
+X6 longitude                              0
+Y house price of unit area                0
+
+[3] Train/Test Split (80/20):
+    Training instances: 331
+    Testing instances:  83
+
+[4] Fitted Multiple Linear Regression Model:
+    Intercept (b0): -13044.231917
+
+Feature Coefficients Table:
+                               Feature  Coefficient   Impact
+                   X1 transaction date     5.440742 Positive
+                          X2 house age    -0.270791 Negative
+X3 distance to the nearest MRT station    -0.004759 Negative
+       X4 number of convenience stores     1.091425 Positive
+                           X5 latitude   229.043054 Positive
+                          X6 longitude   -29.492591 Negative
+
+[5] Model Evaluation Metrics on Unseen Test Data:
+    Mean Absolute Error (MAE):     5.3054
+    Mean Squared Error (MSE):      53.5056
+    Root Mean Squared Error (RMSE): 7.3148
+    R-squared (R²):                0.6811
+
+[6] Saved metrics table to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\metrics.csv
+    Saved actual vs predicted values to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\predictions.csv
+
+Sample Actual vs Predicted Prices:
+ Actual_Price  Predicted_Price  Residual
+         45.1            47.89     -2.79
+         42.3            41.16      1.14
+         52.2            44.27      7.93
+         37.3            40.20     -2.90
+         22.8            27.51     -4.71
+         36.3            45.11     -8.81
+         53.0            44.63      8.37
+         51.4            46.36      5.04
+         16.1            23.62     -7.52
+         59.0            54.33      4.67
+
+[7] Saved actual vs predicted plot to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\plots\actual_vs_predicted.png
+    Saved residual analysis plot to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\plots\residual_plot.png
+[8] Saved dataset audit documentation to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\dataset_info.txt
+[9] Saved final results summary to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression\results.txt
+
+===========================================================================
+ASSIGNMENT 2 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

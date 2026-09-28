@@ -1,0 +1,78 @@
+===========================================================================
+ASSIGNMENT 6: BOOSTING AND BAGGING FOR WINE CLASSIFICATION
+Dataset: UCI Wine (ID: 109) | 3 Cultivar Classes
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_6\wine.csv
+
+[1] Dataset Shape: 178 rows, 14 columns
+    Target column: 'class'
+    Class distribution:
+class
+1    59
+2    71
+3    48
+
+[2] Missing values: 0
+
+[3] Train/Test Split (75/25): 133 train | 45 test
+[4] Feature scaling applied (StandardScaler).
+
+[5] Training AdaBoostClassifier (100 estimators)...
+    AdaBoost model trained.
+
+[6] Training BaggingClassifier (100 estimators)...
+    Bagging model trained.
+
+[7] Evaluation Results:
+
+--- BOOSTING (AdaBoost) ---
+  Accuracy:  100.00%
+  Precision: 100.00% (macro)
+  Recall:    100.00% (macro)
+  F1 Score:  100.00% (macro)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 1     1.0000    1.0000    1.0000        15
+     Class 2     1.0000    1.0000    1.0000        18
+     Class 3     1.0000    1.0000    1.0000        12
+
+    accuracy                         1.0000        45
+   macro avg     1.0000    1.0000    1.0000        45
+weighted avg     1.0000    1.0000    1.0000        45
+
+
+--- BAGGING (BaggingClassifier) ---
+  Accuracy:  100.00%
+  Precision: 100.00% (macro)
+  Recall:    100.00% (macro)
+  F1 Score:  100.00% (macro)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 1     1.0000    1.0000    1.0000        15
+     Class 2     1.0000    1.0000    1.0000        18
+     Class 3     1.0000    1.0000    1.0000        12
+
+    accuracy                         1.0000        45
+   macro avg     1.0000    1.0000    1.0000        45
+weighted avg     1.0000    1.0000    1.0000        45
+
+
+[8] COMPARISON TABLE (Boosting vs. Bagging):
+                      Model Accuracy Precision (Macro) Recall (Macro) F1 (Macro)
+        Boosting (AdaBoost)  100.00%           100.00%        100.00%    100.00%
+Bagging (BaggingClassifier)  100.00%           100.00%        100.00%    100.00%
+
+[9] Saved comparison table: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_6_boosting_bagging_wine\comparison.csv
+[10] Saved metrics CSV: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_6_boosting_bagging_wine\metrics.csv
+[11] Saved classification reports: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_6_boosting_bagging_wine\classification_report.txt
+[12] Saved confusion matrix plots.
+[13] Saved bar comparison chart: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_6_boosting_bagging_wine\model_comparison_bar.png
+[14] Saved dataset_info.txt and results.txt
+
+===========================================================================
+ASSIGNMENT 6 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

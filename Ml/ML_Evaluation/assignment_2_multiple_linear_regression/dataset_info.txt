@@ -1,0 +1,28 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 2 - Multiple Linear Regression
+Dataset Name:      Real Estate Valuation Data Set
+UCI Dataset ID:    477
+UCI URL:           https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set
+Originating Inst:  Department of Land Economics, National Chengchi University, Taiwan
+Total Instances:   414 rows
+Input Features:    6 continuous spatial and structural attributes
+Target Attribute:  Y house price of unit area (10000 New Taiwan Dollar / Ping)
+
+FEATURE DESCRIPTIONS:
+----------------------------------------------------------------------
+1. X1 transaction date:                Date of real estate transaction (e.g., 2013.250 = March 2013)
+2. X2 house age:                       Age of the residential unit (years)
+3. X3 distance to MRT:                 Distance to nearest Mass Rapid Transit station (meters)
+4. X4 convenience stores:              Count of convenience stores within walking distance
+5. X5 latitude:                        Geographic latitude coordinate (degrees)
+6. X6 longitude:                       Geographic longitude coordinate (degrees)
+7. Target Y house price of unit area:  Continuous price per unit area
+
+PREPROCESSING APPLIED:
+----------------------------------------------------------------------
+- Checked for null/missing entries: 0 null entries detected.
+- Verified numeric data types for all predictors.
+- Train/Test Split: 80% training (N=331), 20% testing (N=83), random_state=42.
+======================================================================

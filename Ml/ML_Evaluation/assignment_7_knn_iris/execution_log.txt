@@ -1,0 +1,76 @@
+===========================================================================
+ASSIGNMENT 7: K-NEAREST NEIGHBORS (KNN) FOR IRIS CLASSIFICATION
+Dataset: UCI Iris (ID: 53)
+Target: species (Setosa / Versicolor / Virginica)
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_7\iris.csv
+
+[1] Dataset Shape: 150 rows, 5 columns
+    Features: ['sepal length', 'sepal width', 'petal length', 'petal width']
+    Target: 'class'
+
+Class Distribution:
+class
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+
+[2] Missing Values: 0
+
+[3] Train/Test Split (70/30): 105 train | 45 test
+
+[4] Applying StandardScaler (critical for distance-based KNN)...
+
+[5] Evaluating K values (1-20) via 5-Fold Cross-Validation on Training Set:
+    K= 1: CV Accuracy = 95.24% ± 3.01%
+    K= 2: CV Accuracy = 93.33% ± 3.81%
+    K= 3: CV Accuracy = 95.24% ± 4.26%
+    K= 4: CV Accuracy = 95.24% ± 4.26%
+    K= 5: CV Accuracy = 95.24% ± 4.26%
+    K= 6: CV Accuracy = 94.29% ± 3.56%
+    K= 7: CV Accuracy = 96.19% ± 3.56%
+    K= 8: CV Accuracy = 96.19% ± 3.56%
+    K= 9: CV Accuracy = 96.19% ± 3.56%
+    K=10: CV Accuracy = 96.19% ± 3.56%
+    K=11: CV Accuracy = 96.19% ± 3.56%
+    K=12: CV Accuracy = 96.19% ± 1.90%
+    K=13: CV Accuracy = 96.19% ± 3.56%
+    K=14: CV Accuracy = 98.10% ± 3.81%
+    K=15: CV Accuracy = 96.19% ± 3.56%
+    K=16: CV Accuracy = 93.33% ± 4.86%
+    K=17: CV Accuracy = 93.33% ± 4.86%
+    K=18: CV Accuracy = 91.43% ± 3.56%
+    K=19: CV Accuracy = 90.48% ± 4.26%
+    K=20: CV Accuracy = 90.48% ± 3.01%
+
+    Best K: 14 (CV Accuracy: 98.10%)
+
+[6] Saved Accuracy vs K plot: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_7_knn_iris\accuracy_vs_k.png
+
+[7] Training Final KNN Model with K=14...
+
+[8] Final Model Evaluation (K=14, Test Set):
+    Accuracy:          95.56% (0.9556)
+    Precision (Macro): 96.08% (0.9608)
+    Recall (Macro):    95.56% (0.9556)
+    F1 Score (Macro):  95.54% (0.9554)
+
+Classification Report:
+                 precision    recall  f1-score   support
+
+    Iris-setosa     1.0000    1.0000    1.0000        15
+Iris-versicolor     0.8824    1.0000    0.9375        15
+ Iris-virginica     1.0000    0.8667    0.9286        15
+
+       accuracy                         0.9556        45
+      macro avg     0.9608    0.9556    0.9554        45
+   weighted avg     0.9608    0.9556    0.9554        45
+
+[9] Saved confusion matrix: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_7_knn_iris\confusion_matrix.png
+[10] Saved classification report: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_7_knn_iris\classification_report.txt
+[11] Saved metrics CSV: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_7_knn_iris\metrics.csv
+[12] Saved dataset_info.txt and results.txt
+
+===========================================================================
+ASSIGNMENT 7 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

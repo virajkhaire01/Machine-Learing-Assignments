@@ -1,0 +1,31 @@
+======================================================================
+ASSIGNMENT 4: DECISION TREE SPAM CLASSIFICATION RESULTS REPORT
+======================================================================
+Algorithm:         DecisionTreeClassifier (Gini, max_depth=8)
+Dataset:           UCI Spambase (ID: 94)
+Train/Test Split:  80% (3680) / 20% (921)
+Random State:      42
+
+FINAL METRICS (TEST SET):
+----------------------------------------------------------------------
+Accuracy:          90.12%
+Precision (Spam):  90.72%
+Recall (Spam):     83.47%
+F1 Score (Spam):   86.94%
+Macro F1:          89.50%
+
+Confusion Matrix:
+  TN=527  FP=31
+  FN=60  TP=303
+
+INTERPRETATION:
+----------------------------------------------------------------------
+The Decision Tree classifier (max_depth=8) achieves 90.12% accuracy on
+the 921-email unseen test set. The tree's top split feature is
+'cf_$' (importance: 0.4143),
+consistent with the known high discriminative value of dollar-sign
+frequency and certain word frequencies for spam detection.
+max_depth was set to 8 to prevent overfitting; the full-depth
+tree on the training set would memorise the data. Tree visualisation
+is rendered at depth 4 for readability.
+======================================================================

@@ -1,0 +1,15 @@
+Metric,Value
+Chosen_K,3
+Final_Inertia_WCSS,981.2754
+Silhouette_Score,0.2287
+PCA_PC1_Variance,0.3594
+PCA_PC2_Variance,0.2182
+Total_Patients,303
+Cluster_0_Size,86
+Cluster_1_Size,147
+Cluster_2_Size,70
+Silhouette_K2,0.2374
+Silhouette_K3,0.2287
+Silhouette_K4,0.1960
+Silhouette_K5,0.2055
+Silhouette_K6,0.1946

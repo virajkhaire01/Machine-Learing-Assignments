@@ -1,0 +1,3 @@
+Model,Accuracy,Precision (Macro),Recall (Macro),F1 (Macro)
+Boosting (AdaBoost),100.00%,100.00%,100.00%,100.00%
+Bagging (BaggingClassifier),100.00%,100.00%,100.00%,100.00%

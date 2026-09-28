@@ -1,0 +1,72 @@
+===========================================================================
+ASSIGNMENT 4: DECISION TREE FOR SPAM / NOT SPAM CLASSIFICATION
+Dataset: UCI Spambase (ID: 94)
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_4\spambase.csv
+
+[1] Dataset Shape: 4601 rows, 58 columns
+[2] Missing Values: 0
+    Class 0 (Ham): 2788 | Class 1 (Spam): 1813
+
+[3] Train/Test Split: 3680 train | 921 test
+
+[4] Training DecisionTreeClassifier (max_depth=8)...
+    Tree trained. Nodes: 121, Leaves: 61
+    Actual depth used: 8
+
+[5] Evaluation Metrics:
+    Accuracy:           90.12% (0.9012)
+    Precision (Spam):   90.72% (0.9072)
+    Recall (Spam):      83.47% (0.8347)
+    F1-Score (Spam):    86.94% (0.8694)
+    Macro F1:           0.8950
+
+    Confusion Matrix: TN=527, FP=31, FN=60, TP=303
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Not Spam (0)     0.8978    0.9444    0.9205       558
+    Spam (1)     0.9072    0.8347    0.8694       363
+
+    accuracy                         0.9012       921
+   macro avg     0.9025    0.8896    0.8950       921
+weighted avg     0.9015    0.9012    0.9004       921
+
+[6] Saved classification report: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\classification_report.txt
+[7] Saved confusion matrix: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\confusion_matrix.png
+
+[8] Generating Decision Tree visualization (plot depth=4)...
+    Saved tree visualization: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\tree.png
+
+Top 20 Most Important Features:
+    Feature  Importance
+       cf_$    0.414308
+  wf_remove    0.190960
+       cf_!    0.102792
+      wf_hp    0.052776
+  crl_total    0.042234
+    wf_free    0.037179
+     wf_edu    0.025251
+   wf_money    0.020917
+  wf_george    0.020746
+     wf_our    0.014258
+crl_average    0.012270
+crl_longest    0.010257
+      wf_re    0.008538
+wf_business    0.006536
+ wf_meeting    0.005340
+    wf_font    0.004954
+    wf_1999    0.004364
+       cf_(    0.003996
+     wf_you    0.003767
+    wf_your    0.003590
+    Saved feature importance chart: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\feature_importance.png
+
+[9] Saved metrics CSV: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\metrics.csv
+[10] Saved dataset info: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\dataset_info.txt
+[11] Saved results: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam\results.txt
+
+===========================================================================
+ASSIGNMENT 4 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

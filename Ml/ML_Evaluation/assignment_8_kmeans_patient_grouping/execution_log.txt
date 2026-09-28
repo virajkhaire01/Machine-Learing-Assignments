@@ -1,0 +1,77 @@
+===========================================================================
+ASSIGNMENT 8: K-MEANS CLUSTERING FOR PATIENT HEALTH GROUPING
+Dataset: UCI Heart Disease (ID: 45)
+Method: Unsupervised KMeans — Diagnosis column NOT used as input feature
+===========================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_8\heart_disease.csv
+
+[1] Dataset Shape: 303 rows, 14 columns
+    Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'num']
+
+[2] Selected Numeric Health Indicators: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+    Target column 'num' is EXCLUDED from clustering.
+
+[3] Handling Missing Values...
+    Missing values per column:
+age         0
+trestbps    0
+chol        0
+thalach     0
+oldpeak     0
+    No missing values detected.
+
+    Final clean samples: 303
+
+[4] Scaling features using StandardScaler...
+    Scaling complete. Mean~0, Std~1 per feature.
+
+[5] Running Elbow Method (K=2 to 10)...
+    K=2: Inertia (WCSS) = 1142.07
+    K=3: Inertia (WCSS) = 981.28
+    K=4: Inertia (WCSS) = 876.25
+    K=5: Inertia (WCSS) = 787.42
+    K=6: Inertia (WCSS) = 727.12
+    K=7: Inertia (WCSS) = 683.66
+    K=8: Inertia (WCSS) = 639.63
+    K=9: Inertia (WCSS) = 612.61
+    K=10: Inertia (WCSS) = 575.87
+
+    Saved Elbow Curve: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping\elbow_curve.png
+
+[6] Selected K=3 (based on elbow — meaningful clinical grouping).
+
+    Silhouette Scores for K=2..6:
+    K=2: Silhouette Score = 0.2374
+    K=3: Silhouette Score = 0.2287
+    K=4: Silhouette Score = 0.1960
+    K=5: Silhouette Score = 0.2055
+    K=6: Silhouette Score = 0.1946
+    Best K by silhouette: 2 (Score: 0.2374)
+
+[8] Running final KMeans with K=3...
+    Final Inertia (WCSS):     981.28
+    Final Silhouette Score:   0.2287
+
+[9] Cluster Sizes:
+    Cluster 0: 86 patients (28.4%)
+    Cluster 1: 147 patients (48.5%)
+    Cluster 2: 70 patients (23.1%)
+
+    Cluster Centers (original feature scale):
+           age  trestbps    chol  thalach  oldpeak
+Cluster                                           
+0        59.12    127.14  228.42   125.76     1.88
+1        48.83    125.16  235.65   164.05     0.44
+2        60.47    150.99  292.33   148.57     1.27
+
+[10] Generating 2D PCA cluster visualization...
+    PCA variance explained: PC1=35.9%, PC2=21.8%
+    Saved cluster visualization: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping\clusters.png
+    Saved feature distribution boxplot: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping\cluster_feature_distribution.png
+[12] Saved clustered patient data: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping\clustered_patients.csv
+[13] Saved metrics CSV: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping\metrics.csv
+[14] Saved dataset_info.txt and results.txt
+
+===========================================================================
+ASSIGNMENT 8 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+===========================================================================

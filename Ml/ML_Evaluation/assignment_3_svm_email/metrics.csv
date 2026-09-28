@@ -1,0 +1,12 @@
+Metric,Value
+Accuracy,0.9273
+Precision_Spam,0.9277
+Recall_Spam,0.8843
+F1_Score_Spam,0.9055
+Precision_Macro,0.9274
+Recall_Macro,0.9197
+F1_Score_Macro,0.9232
+True_Negatives,533
+False_Positives,25
+False_Negatives,42
+True_Positives,321

@@ -1,0 +1,18 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 5 - Random Forest for Mushroom Classification
+Dataset Name:      Mushroom
+UCI Dataset ID:    73
+UCI URL:           https://archive.ics.uci.edu/dataset/73/mushroom
+Total Instances:   8124 mushroom samples
+Input Features:    22 categorical morphological attributes
+Target Class:      class (e = Edible, p = Poisonous)
+
+ENCODING APPLIED:
+----------------------------------------------------------------------
+- All 22 categorical feature columns encoded with LabelEncoder.
+- Missing values ('?') in 'stalk-root': 2480 instances filled with mode.
+- Train/Test Split: 80% (6499) / 20% (1625), stratified.
+- No feature scaling needed (Random Forests are scale-invariant).
+======================================================================

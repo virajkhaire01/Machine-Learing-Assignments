@@ -1,0 +1,11 @@
+CLASSIFICATION REPORT - SVM (UCI SPAMBASE)
+============================================================
+
+              precision    recall  f1-score   support
+
+Not Spam (0)     0.9270    0.9552    0.9409       558
+    Spam (1)     0.9277    0.8843    0.9055       363
+
+    accuracy                         0.9273       921
+   macro avg     0.9274    0.9197    0.9232       921
+weighted avg     0.9273    0.9273    0.9269       921

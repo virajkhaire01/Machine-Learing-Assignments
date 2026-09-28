@@ -1,0 +1,27 @@
+CLASSIFICATION REPORTS - BOOSTING & BAGGING (UCI WINE)
+======================================================================
+
+BOOSTING (AdaBoost):
+----------------------------------------
+              precision    recall  f1-score   support
+
+     Class 1     1.0000    1.0000    1.0000        15
+     Class 2     1.0000    1.0000    1.0000        18
+     Class 3     1.0000    1.0000    1.0000        12
+
+    accuracy                         1.0000        45
+   macro avg     1.0000    1.0000    1.0000        45
+weighted avg     1.0000    1.0000    1.0000        45
+
+
+BAGGING (BaggingClassifier):
+----------------------------------------
+              precision    recall  f1-score   support
+
+     Class 1     1.0000    1.0000    1.0000        15
+     Class 2     1.0000    1.0000    1.0000        18
+     Class 3     1.0000    1.0000    1.0000        12
+
+    accuracy                         1.0000        45
+   macro avg     1.0000    1.0000    1.0000        45
+weighted avg     1.0000    1.0000    1.0000        45

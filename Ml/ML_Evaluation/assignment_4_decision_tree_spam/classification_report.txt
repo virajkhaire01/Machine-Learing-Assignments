@@ -1,0 +1,11 @@
+CLASSIFICATION REPORT - DECISION TREE (UCI SPAMBASE)
+============================================================
+
+              precision    recall  f1-score   support
+
+Not Spam (0)     0.8978    0.9444    0.9205       558
+    Spam (1)     0.9072    0.8347    0.8694       363
+
+    accuracy                         0.9012       921
+   macro avg     0.9025    0.8896    0.8950       921
+weighted avg     0.9015    0.9012    0.9004       921

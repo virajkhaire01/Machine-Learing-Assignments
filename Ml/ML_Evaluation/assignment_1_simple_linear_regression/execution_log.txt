@@ -1,0 +1,75 @@
+======================================================================
+ASSIGNMENT 1: SIMPLE LINEAR REGRESSION
+Dataset: UCI Auto MPG (ID: 9) | Independent Variable: displacement
+Target: mpg (Miles Per Gallon)
+======================================================================
+[INFO] Loading dataset from local cache: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\datasets\assignment_1\auto_mpg.csv
+
+[1] Dataset Shape: 398 rows, 8 columns
+
+Feature Summary:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 398 entries, 0 to 397
+Data columns (total 8 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   displacement  398 non-null    float64
+ 1   cylinders     398 non-null    int64  
+ 2   horsepower    392 non-null    float64
+ 3   weight        398 non-null    int64  
+ 4   acceleration  398 non-null    float64
+ 5   model_year    398 non-null    int64  
+ 6   origin        398 non-null    int64  
+ 7   mpg           398 non-null    float64
+dtypes: float64(4), int64(4)
+memory usage: 25.0 KB
+None
+
+First 5 Rows:
+   displacement   mpg
+0         307.0  18.0
+1         350.0  15.0
+2         318.0  18.0
+3         304.0  16.0
+4         302.0  17.0
+
+[2] Cleaned Dataset Shape (after dropna): 398 rows
+
+[3] Train/Test Split (80/20):
+    Training samples:   318
+    Testing samples:    80
+
+[4] Fitted Linear Regression Model:
+    Slope (Coefficient m):  -0.061725
+    Intercept (c):          35.453495
+    Model Equation:         mpg = (-0.0617 * displacement) + (35.4535)
+
+[5] Model Evaluation Metrics (Test Set):
+    Mean Absolute Error (MAE):     3.3950
+    Mean Squared Error (MSE):      18.1025
+    Root Mean Squared Error (RMSE): 4.2547
+    R-squared (R²):                0.6633
+
+[6] Saved metrics to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression\metrics.csv
+    Saved actual vs predicted values to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression\predictions.csv
+
+Sample Actual vs Predicted Values:
+ Displacement  Actual_MPG  Predicted_MPG  Residual
+         91.0        33.0          29.84      3.16
+        120.0        28.0          28.05     -0.05
+        232.0        19.0          21.13     -2.13
+        318.0        13.0          15.82     -2.82
+        318.0        14.0          15.82     -1.82
+         97.0        27.0          29.47     -2.47
+        140.0        24.0          26.81     -2.81
+        440.0        13.0           8.29      4.71
+        260.0        17.0          19.40     -2.40
+        200.0        21.0          23.11     -2.11
+
+[7] Saved regression scatter plot to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression\plots\regression_line.png
+[8] Saved dataset audit documentation to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression\dataset_info.txt
+[9] Saved final results summary to: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression\results.txt
+
+======================================================================
+ASSIGNMENT 1 EXECUTION COMPLETE - ALL OUTPUTS GENERATED
+======================================================================

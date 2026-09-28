@@ -1,0 +1,41 @@
+======================================================================
+ASSIGNMENT 3: SVM FOR EMAIL CLASSIFICATION RESULTS REPORT
+======================================================================
+Assignment Title:      Support Vector Machine for Email Classification
+Dataset Used:          UCI Spambase (Dataset ID: 94)
+Algorithm:             Support Vector Classifier (SVC)
+Kernel:                Radial Basis Function (RBF)
+Regularization (C):    1.0
+Kernel Gamma:          scale
+Train/Test Split:      80% Train (3680 samples), 20% Test (921 samples)
+Stratification:        Enabled (preserved ~39.4% Spam ratio)
+Preprocessing:         StandardScaler (Z-score normalization)
+Random State:          42
+
+FINAL EVALUATION METRICS (TEST SET):
+----------------------------------------------------------------------
+Accuracy:              92.73% (0.9273)
+Precision (Spam):      92.77% (0.9277)
+Recall (Spam):         88.43% (0.8843)
+F1 Score (Spam):       90.55% (0.9055)
+Macro F1 Score:        92.32% (0.9232)
+
+CONFUSION MATRIX SUMMARY:
+----------------------------------------------------------------------
+True Negatives (Legitimate Ham Correctly Allowed): 533
+False Positives (Legitimate Ham Flagged as Spam): 25
+False Negatives (Spam Leaked to Inbox):            42
+True Positives (Spam Correctly Filtered):          321
+
+SHORT INTERPRETATION OF RESULT:
+----------------------------------------------------------------------
+1. Predictive Reliability: The RBF-kernel SVM achieved an outstanding classification
+   accuracy of 92.73% on unseen emails, confirming the effectiveness of margin
+   maximization in high-dimensional word/character frequency feature spaces (57 dimensions).
+2. Spam Precision vs. Recall: The model obtained a precision of 92.77% and a
+   recall of 88.43% on spam detection. In email security, high precision is vital
+   to prevent legitimate correspondence (ham) from being erroneously quarantined; our model
+   demonstrated only 25 false positive errors out of 558 legitimate emails.
+3. Importance of Scaling: StandardScaler was crucial because capital run-length attributes
+   span values up to thousands, whereas word frequency percentages range from 0 to 100.
+======================================================================

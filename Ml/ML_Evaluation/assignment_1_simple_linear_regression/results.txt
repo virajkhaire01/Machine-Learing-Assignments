@@ -1,0 +1,43 @@
+======================================================================
+ASSIGNMENT 1: SIMPLE LINEAR REGRESSION RESULTS REPORT
+======================================================================
+Assignment Title:      Simple Linear Regression
+Dataset Used:          UCI Auto MPG (Dataset ID: 9)
+Independent Variable:  displacement (Engine Displacement)
+Dependent Target:      mpg (Miles Per Gallon)
+Algorithm:             Ordinary Least Squares Linear Regression (LinearRegression)
+Train/Test Split:      80% Train (318 samples), 20% Test (80 samples)
+Random State:          42
+
+MODEL PARAMETERS:
+----------------------------------------------------------------------
+Slope (Coefficient m): -0.061725
+Intercept (c):         35.453495
+Regression Equation:   mpg = (-0.0617 * displacement) + (35.4535)
+
+EVALUATION METRICS (TEST SET):
+----------------------------------------------------------------------
+MAE:                   3.3950
+MSE:                   18.1025
+RMSE:                  4.2547
+R²:                    0.6633
+
+RESULT INTERPRETATION:
+----------------------------------------------------------------------
+1. Relationship: The negative coefficient of -0.0617 indicates an inverse
+   relationship between engine displacement and fuel efficiency. For every 100 cubic
+   inches increase in engine displacement, fuel economy decreases by approximately
+   6.17 miles per gallon.
+2. Goodness of Fit: The coefficient of determination (R² = 0.6633) demonstrates
+   that approximately 66.33% of the variance in vehicle fuel economy is
+   explained solely by engine displacement in this simple linear model.
+3. Prediction Accuracy: The model yields a Root Mean Squared Error (RMSE) of 4.25
+   MPG and a Mean Absolute Error (MAE) of 3.39 MPG on unseen test instances.
+
+ACADEMIC LIMITATION STATEMENT:
+----------------------------------------------------------------------
+A genuine continuous salary regression dataset is not present in the UCI ML
+repository. Adult/Census Income was not converted to fake salary values to
+preserve strict scientific integrity. Auto MPG was utilized as the closest
+standard UCI regression benchmark.
+======================================================================

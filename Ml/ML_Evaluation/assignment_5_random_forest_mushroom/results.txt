@@ -1,0 +1,29 @@
+======================================================================
+ASSIGNMENT 5: RANDOM FOREST MUSHROOM CLASSIFICATION RESULTS REPORT
+======================================================================
+Algorithm:         RandomForestClassifier
+Estimators:        100 trees
+Dataset:           UCI Mushroom (ID: 73)
+Train/Test Split:  80% (6499) / 20% (1625)
+Random State:      42
+
+FINAL METRICS (TEST SET):
+----------------------------------------------------------------------
+Accuracy:              100.00%
+Precision (Poisonous): 100.00%
+Recall (Poisonous):    100.00%
+F1 Score (Poisonous):  100.00%
+Macro F1:              100.00%
+Top Feature:           odor (Importance: 0.1799)
+
+INTERPRETATION:
+----------------------------------------------------------------------
+The Random Forest model achieved 100.00% accuracy classifying mushrooms
+as edible or poisonous from 22 categorical morphological features.
+The most discriminative feature is 'odor', which
+Random Forest consistently identifies as the strongest predictor of
+mushroom toxicity. High recall (100.00%) is critically important here:
+missing a poisonous mushroom (False Negative) would be life-threatening.
+The ensemble of 100 trees significantly reduces variance compared
+to a single decision tree and achieves near-perfect classification.
+======================================================================

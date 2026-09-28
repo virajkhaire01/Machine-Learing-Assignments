@@ -1,0 +1,136 @@
+===========================================================================
+ML EVALUATION — MASTER RESULTS REPORT
+Generated: 2026-09-28 13:33:31
+===========================================================================
+
+TOTAL ASSIGNMENTS: 8
+PASSED:            8
+FAILED:            0
+
+---------------------------------------------------------------------------
+
+Assignment 1: Simple Linear Regression
+  Status:     PASS
+  Dataset:    UCI Auto MPG (ID: 9)
+  Algorithm:  LinearRegression (OLS)
+  Detail:     Completed in 3.3s
+  Key Metrics:
+    Slope (m): -0.061725
+    Intercept (c): 35.453495
+    MAE: 3.3950
+    MSE: 18.1025
+    RMSE: 4.2547
+    R2_Score: 0.6633
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_1_simple_linear_regression
+
+Assignment 2: Multiple Linear Regression
+  Status:     PASS
+  Dataset:    UCI Real Estate Valuation (ID: 477)
+  Algorithm:  Multiple LinearRegression (OLS)
+  Detail:     Completed in 3.9s
+  Key Metrics:
+    Intercept: -13044.231917
+    MAE: 5.3054
+    MSE: 53.5056
+    RMSE: 7.3148
+    R2_Score: 0.6811
+    Coef_X1: 5.440742
+    Coef_X2: -0.270791
+    Coef_X3: -0.004759
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_2_multiple_linear_regression
+
+Assignment 3: SVM for Email Classification
+  Status:     PASS
+  Dataset:    UCI Spambase (ID: 94)
+  Algorithm:  SVC (RBF Kernel)
+  Detail:     Completed in 3.5s
+  Key Metrics:
+    Accuracy: 0.9273
+    Precision_Spam: 0.9277
+    Recall_Spam: 0.8843
+    F1_Score_Spam: 0.9055
+    Precision_Macro: 0.9274
+    Recall_Macro: 0.9197
+    F1_Score_Macro: 0.9232
+    True_Negatives: 533
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_3_svm_email
+
+Assignment 4: Decision Tree for Spam Classification
+  Status:     PASS
+  Dataset:    UCI Spambase (ID: 94)
+  Algorithm:  DecisionTreeClassifier (Gini, max_depth=8)
+  Detail:     Completed in 5.4s
+  Key Metrics:
+    Accuracy: 0.9012
+    Precision_Spam: 0.9072
+    Recall_Spam: 0.8347
+    F1_Spam: 0.8694
+    Macro_F1: 0.8950
+    True_Negatives: 527
+    False_Positives: 31
+    False_Negatives: 60
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_4_decision_tree_spam
+
+Assignment 5: Random Forest for Mushroom Classification
+  Status:     PASS
+  Dataset:    UCI Mushroom (ID: 73)
+  Algorithm:  RandomForestClassifier (100 trees)
+  Detail:     Completed in 4.2s
+  Key Metrics:
+    Accuracy: 1.0000
+    Precision_Poisonous: 1.0000
+    Recall_Poisonous: 1.0000
+    F1_Poisonous: 1.0000
+    Macro_F1: 1.0000
+    True_Negatives: 842
+    False_Positives: 0
+    False_Negatives: 0
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_5_random_forest_mushroom
+
+Assignment 6: Boosting and Bagging for Wine Classification
+  Status:     PASS
+  Dataset:    UCI Wine (ID: 109)
+  Algorithm:  AdaBoostClassifier + BaggingClassifier
+  Detail:     Completed in 12.1s
+  Key Metrics:
+    Accuracy: 1.0000
+    Precision: 1.0000
+    Recall: 1.0000
+    F1: 1.0000
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_6_boosting_bagging_wine
+
+Assignment 7: KNN for Iris Classification
+  Status:     PASS
+  Dataset:    UCI Iris (ID: 53)
+  Algorithm:  KNeighborsClassifier (Best K via CV)
+  Detail:     Completed in 4.3s
+  Key Metrics:
+    Best_K: 14
+    Accuracy: 0.9556
+    Precision_Macro: 0.9608
+    Recall_Macro: 0.9556
+    F1_Macro: 0.9554
+    CV_Acc_K1: 0.9524
+    CV_Acc_K2: 0.9333
+    CV_Acc_K3: 0.9524
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_7_knn_iris
+
+Assignment 8: K-Means Clustering for Patient Grouping
+  Status:     PASS
+  Dataset:    UCI Heart Disease (ID: 45)
+  Algorithm:  KMeans (k-means++, K=3)
+  Detail:     Completed in 5.7s
+  Key Metrics:
+    Chosen_K: 3
+    Final_Inertia_WCSS: 981.2754
+    Silhouette_Score: 0.2287
+    PCA_PC1_Variance: 0.3594
+    PCA_PC2_Variance: 0.2182
+    Total_Patients: 303
+    Cluster_0_Size: 86
+    Cluster_1_Size: 147
+  Result Dir: C:\Users\khair\OneDrive\Desktop\Ml\ML_Evaluation\assignment_8_kmeans_patient_grouping
+
+===========================================================================
+END OF MASTER RESULTS REPORT
+===========================================================================

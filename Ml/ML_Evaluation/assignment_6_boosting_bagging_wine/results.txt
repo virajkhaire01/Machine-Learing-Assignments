@@ -1,0 +1,34 @@
+======================================================================
+ASSIGNMENT 6: BOOSTING & BAGGING WINE CLASSIFICATION RESULTS
+======================================================================
+Dataset: UCI Wine (ID: 109) | 3 Cultivar Classes
+Train/Test: 75% (133) / 25% (45) | Random State: 42
+
+BOOSTING — AdaBoostClassifier (100 estimators):
+----------------------------------------------------------------------
+Accuracy:          100.00%
+Precision (Macro): 100.00%
+Recall (Macro):    100.00%
+F1 Score (Macro):  100.00%
+
+BAGGING — BaggingClassifier (100 estimators):
+----------------------------------------------------------------------
+Accuracy:          100.00%
+Precision (Macro): 100.00%
+Recall (Macro):    100.00%
+F1 Score (Macro):  100.00%
+
+COMPARISON SUMMARY:
+----------------------------------------------------------------------
+Boosting achieved higher accuracy.
+Boosting achieved higher macro F1 score.
+
+INTERPRETATION:
+----------------------------------------------------------------------
+AdaBoost (Boosting) sequentially corrects errors of prior weak learners
+(shallow decision trees). BaggingClassifier uses bootstrap sampling to
+build diverse full-depth trees and averages their predictions.
+For the small, well-balanced UCI Wine dataset (178 samples, 13 features,
+3 classes), both ensemble methods achieve high performance, confirming
+that ensemble approaches substantially outperform single classifiers.
+======================================================================

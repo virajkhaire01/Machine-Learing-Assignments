@@ -1,0 +1,27 @@
+======================================================================
+ASSIGNMENT 7: KNN IRIS CLASSIFICATION RESULTS REPORT
+======================================================================
+Algorithm:         K-Nearest Neighbors (KNeighborsClassifier)
+Distance Metric:   Euclidean
+Dataset:           UCI Iris (ID: 53)
+Train/Test Split:  70% (105) / 30% (45) | Stratified
+Random State:      42
+K Selection:       5-fold CV over K=1..20 → Best K = 14
+
+FINAL METRICS (TEST SET, K=14):
+----------------------------------------------------------------------
+Accuracy:          95.56%
+Precision (Macro): 96.08%
+Recall (Macro):    95.56%
+F1 Score (Macro):  95.54%
+
+INTERPRETATION:
+----------------------------------------------------------------------
+KNN with K=14 achieves 95.56% accuracy on the Iris dataset.
+As a distance-based algorithm, KNN is highly sensitive to feature scale
+differences; StandardScaler was therefore applied to equalise feature
+contributions. Cross-validation across K=1 to 20 confirmed K=14
+as optimal — small K values overfit training samples, while large K
+values introduce bias. Iris-setosa is trivially linearly separable,
+while Iris-versicolor and Iris-virginica have some class overlap.
+======================================================================

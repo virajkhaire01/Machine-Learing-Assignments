@@ -1,0 +1,44 @@
+======================================================================
+ASSIGNMENT 2: MULTIPLE LINEAR REGRESSION RESULTS REPORT
+======================================================================
+Assignment Title:      Multiple Linear Regression for House Price Prediction
+Dataset Used:          UCI Real Estate Valuation (Dataset ID: 477)
+Target Variable:       Y house price of unit area
+Algorithm:             Multiple Ordinary Least Squares Linear Regression
+Train/Test Split:      80% Train (331 samples), 20% Test (83 samples)
+Random State:          42
+
+MODEL PARAMETERS:
+----------------------------------------------------------------------
+Intercept (b0):        -13044.231917
+
+Feature Coefficients:
+  X1 transaction date: 5.440742
+  X2 house age: -0.270791
+  X3 distance to the nearest MRT station: -0.004759
+  X4 number of convenience stores: 1.091425
+  X5 latitude: 229.043054
+  X6 longitude: -29.492591
+
+EVALUATION METRICS (TEST SET):
+----------------------------------------------------------------------
+MAE:                   5.3054
+MSE:                   53.5056
+RMSE:                  7.3148
+R²:                    0.6811
+
+RESULT INTERPRETATION:
+----------------------------------------------------------------------
+1. Model Explanatory Power: The fitted multiple linear regression model achieves
+   an R² of 0.6811, demonstrating that approximately 68.11% of the variance
+   in residential unit house prices is accounted for by the combination of
+   transaction date, age, transit proximity, local amenities, and geographic coordinates.
+2. Feature Influence:
+   - Proximity to Mass Transit (X3) has a substantial negative coefficient,
+     indicating that increased distance from an MRT station markedly diminishes property values.
+   - Convenience stores (X4) exhibits a positive coefficient, reflecting value premiums
+     associated with local commercial accessibility.
+   - House age (X2) is inversely related to unit price, consistent with physical depreciation.
+3. Prediction Accuracy: Test set MAE is 5.31 (10,000 NTD/Ping) and RMSE is 7.31,
+   demonstrating solid predictive calibration with residuals centered tightly around zero.
+======================================================================

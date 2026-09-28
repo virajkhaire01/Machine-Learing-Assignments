@@ -1,0 +1,24 @@
+======================================================================
+UCI MACHINE LEARNING REPOSITORY DATASET SPECIFICATION
+======================================================================
+Assignment:        Assignment 7 - KNN for Iris Classification
+Dataset Name:      Iris
+UCI Dataset ID:    53
+UCI URL:           https://archive.ics.uci.edu/dataset/53/iris
+Originator:        R.A. Fisher, 1936
+Total Instances:   150 flower samples (50 per class)
+Input Features:    4 continuous morphological measurements
+  - sepal length (cm)
+  - sepal width (cm)
+  - petal length (cm)
+  - petal width (cm)
+Target Classes:    Iris-setosa, Iris-versicolor, Iris-virginica
+
+PREPROCESSING:
+----------------------------------------------------------------------
+- Missing values: 0 found.
+- StandardScaler applied (required for Euclidean distance in KNN).
+- 70/30 stratified train/test split (random_state=42).
+- K selected via 5-fold cross-validation over K=1..20.
+- Optimal K = 14 (CV Accuracy = 98.10%)
+======================================================================
